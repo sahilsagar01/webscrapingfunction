@@ -133,7 +133,7 @@ async function selectCityAndGetHospitalDetails(page, city) {
                 const hospitalDetails = await selectCityAndGetHospitalDetails(page, cityOptions[j]);
                 console.log(`Hospital Details for City ${cityOptions[j].optionValue}:`, hospitalDetails);
                 result.push(hospitalDetails);
-                fs.writeFileSync("magma.json", JSON.stringify(result));
+                fs.writeFileSync("./magma/magma.json", JSON.stringify(result));
 
             }
         }

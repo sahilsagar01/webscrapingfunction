@@ -280,7 +280,7 @@ async function selectCityAndGetHospitalDetails(page, city) {
             pageRes.push(hospitalDetails);
             result.push(pageRes);
             console.log("line no. 191", result);
-            fs.writeFileSync("careHealth.json", JSON.stringify(result));
+            fs.writeFileSync("./carehealth/careHealth.json", JSON.stringify(result));
             //! basic selection
 
             //!click next Page

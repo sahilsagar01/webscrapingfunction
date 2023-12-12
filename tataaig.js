@@ -986,7 +986,7 @@ async function main(searchOptions) {
                         result.push(...hospitalDetails.data)
                     }
                  
-                    fs.writeFileSync("tataaig.json", JSON.stringify(result));
+                    fs.writeFileSync("./tataaig/tataaig.json", JSON.stringify(result));
                 } catch (error) {
                     console.error("Error fetching hospital details:", error);
                 }

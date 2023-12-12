@@ -126,6 +126,6 @@ async function scraping(state) {
     result.push([...res]);
   }
   console.log("line 57", result);
-  fs.writeFileSync("godigit.json", JSON.stringify(result));
+  fs.writeFileSync("./godigit/godigit.json", JSON.stringify(result));
   // await setPageToState.select();
 })();

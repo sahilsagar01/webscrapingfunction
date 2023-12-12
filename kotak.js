@@ -15,7 +15,7 @@ https.get(url, function (response) {
             const hospitalList = JSON.parse(data);
             console.log(hospitalList.data);
             console.log(hospitalList.data.length)
-            fs.writeFileSync("kotakData.json", JSON.stringify(hospitalList.data));
+            fs.writeFileSync("./kotak/kotakData.json", JSON.stringify(hospitalList.data));
         } catch (error) {
             console.error("Error parsing JSON:", error.message);
         }

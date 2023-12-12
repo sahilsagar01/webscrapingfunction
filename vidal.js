@@ -212,8 +212,8 @@ async function selectCityAndGetHospitalDetails(page, state) {
                 result.push(hospitalDetails);
                 CompaniesArr[c - 1].push(hospitalDetails);
 
-                fs.writeFileSync(`${companyFileName}.json`, JSON.stringify(CompaniesArr[c - 1]));
-                fs.writeFileSync(`vidal.json`, JSON.stringify(result));
+                fs.writeFileSync(`./vidal/${companyFileName}.json`, JSON.stringify(CompaniesArr[c - 1]));
+                fs.writeFileSync(`allvidal.json`, JSON.stringify(result));
                 
 
                 // for (let j = 1; j < cityOptions.length; j++) {

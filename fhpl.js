@@ -205,8 +205,8 @@ const getHospitals = async(page, postBody) => {
                     result.push(hospitalDetails)
                     CompaniesArr[c].push(hospitalDetails)
                    
-                    fs.writeFileSync(`${companyFileName}.json`, JSON.stringify(CompaniesArr[c]))
-                    fs.writeFileSync("result.json", JSON.stringify(result));
+                    fs.writeFileSync(`./fhpldata/${companyFileName}.json`, JSON.stringify(CompaniesArr[c]))
+                    fs.writeFileSync("allfhpl.json", JSON.stringify(result));
                     
                 }
             }

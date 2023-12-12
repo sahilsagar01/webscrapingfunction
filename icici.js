@@ -81,7 +81,7 @@ async function selectCityAndGetHospitalDetails(page, city) {
                 const hospitalDetails = await selectCityAndGetHospitalDetails(page, cityOptions[j]);
                 console.log(`Hospital Details for City ${cityOptions[j]}:`, hospitalDetails);
                 result.push(hospitalDetails);
-                fs.writeFileSync("icici.json", JSON.stringify(result));
+                fs.writeFileSync("./icici/icici.json", JSON.stringify(result));
 
             }
         }

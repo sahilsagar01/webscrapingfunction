@@ -108,7 +108,7 @@ async function selectCityAndGetHospitalDetails(page, city) {
                 const hospitalDetails = await selectCityAndGetHospitalDetails(page, cityOptions[j]);
                 console.log(`Hospital Details for City ${cityOptions[j]}:`, hospitalDetails);
                 result.push(hospitalDetails);
-                fs.writeFileSync("oriantal.json", JSON.stringify(result));
+                fs.writeFileSync("./oriantal/oriantal.json", JSON.stringify(result));
 
             }
         }
